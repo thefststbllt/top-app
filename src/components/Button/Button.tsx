@@ -15,7 +15,7 @@ export const Button = ({ children, appearance, arrow = 'none', className, ...pro
         {arrow !== 'none' && <span className={cn(styles.arrow, {
           [styles.down]: arrow === 'down'
         })}>
-          <ArrowIcon />
+          <ArrowIcon/>
         </span>}
       </button>
   )
