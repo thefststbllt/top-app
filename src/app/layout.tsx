@@ -1,11 +1,11 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Noto_Sans } from 'next/font/google';
+import { Noto_Sans_KR } from 'next/font/google';
 import { TheHeader } from '@/components/TheHeader';
 import { Footer } from '@/components/Footer';
 
-const NotoSans = Noto_Sans({
-  subsets: ['cyrillic'],
+const NotoSans = Noto_Sans_KR({
+  subsets: ['latin'],
   weight: "500"
 });
 
