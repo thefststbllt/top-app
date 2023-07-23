@@ -4,9 +4,11 @@ import { Htag } from '@/components/Htag/HTag';
 import { Button } from '@/components/Button/Button';
 import { P } from '@/components/P/P';
 import { Tag } from '@/components/Tag/Tag';
-import { Rating } from "@/components/Rating/Rating";
+import { Rating } from '@/components/Rating/Rating';
+import { useState } from 'react';
 
 export default function Home(): JSX.Element {
+      const [rating, setRating] = useState();
   return (
       <main>
         <Htag tag='h1'>Главная страница</Htag>
@@ -21,7 +23,7 @@ export default function Home(): JSX.Element {
         <Tag size='m' color='red'>Red</Tag>
         <Tag size='s' color='green'>Green</Tag>
         <Tag color='primary'>Primary</Tag>
-        <Rating rating={4}/>
+        <Rating rating={rating} isEditable={true} setRating={setRating}/>
       </main>
   );
 }

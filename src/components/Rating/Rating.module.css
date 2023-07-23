@@ -1,7 +1,31 @@
-.filled {
-    fill: var(--primary);
+.rating {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: min-content;
 }
 
-.star:not(:last-of-type) {
+.star svg {
+    fill: #e2e2e2;
+    transition: 0.2s fill ease;
+}
+
+.star:not(:last-of-type) svg {
     margin-right: 5px;
+}
+
+.star svg:focus {
+    outline: none;
+}
+
+.star svg:focus-visible {
+    fill: var(--primary-focus)
+}
+
+.filled svg {
+    fill: var(--primary);
+    transition: 0.2s fill ease;
+}
+
+.editable {
+    cursor: pointer;
 }
