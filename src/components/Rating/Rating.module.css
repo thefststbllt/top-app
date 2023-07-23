@@ -1,0 +1,7 @@
+.filled {
+    fill: var(--primary);
+}
+
+.star:not(:last-of-type) {
+    margin-right: 5px;
+}
